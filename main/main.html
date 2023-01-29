@@ -6,54 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
     <title></title>
 </head>
 
 <body>
 
-    <nav>
-        <div class="continer">
-            <div class="flex flex-between">
-                <ul class="flex flex-center">
-                    <li>
-                        <img src="./main-icons/logo_light.png" alt="logo">
-                    </li>
-                    <li>
-                        <img src="./main-icons/map-locator 1.png" alt="locator">
-                        Казань
-                    </li>
-                    <li>
-                        Каталог
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        Частые вопросы
-                    </li>
-                    <li>
-                        Сотрудничество
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="./main-icons/icon_favorite.png" alt="icon-favorite">
-                    </li>
-                    <li>
-                        <img src="./main-icons/icon_search.png" alt="search">
-                    </li>
-                    <li>
-                        <a href="#">Поиск по названию</a>
-                    </li>
-                    <li>
-                        <img src="./main-icons/Frame.png" alt="frame">
-                    </li>
-                    <li>
-                        <a href="#">8 (843) 528-65-48</a>
-                    </li>
-                </ul>
+    <div class="main-bg">
+        <nav>
+            <div class="container bg-main">
+                <div class="flex flex-between ">
+                    <ul class="navbar-items flex flex-center">
+                        <li class="navbar-item">
+                            <img class="navbar-item_logo" src="./main-icons/logo_light.png" alt="logo">
+                        </li>
+                        <li class="navbar-item none">
+                            <img src="./main-icons/map-locator 1.png" alt="locator">
+                            <a class="c-white describe fw-600" href="#">Казань</a>
+                            <img src="./main-icons/arrow down.png" alt="down">
+                        </li>
+                        <li class="navbar-item none">
+                            <button class="c-white describe fw-600 button">Каталог</button>
+                        </li>
+                    </ul>
+                    <ul class="navbar-items flex flex-center none">
+                        <li class="navbar-item">
+                            <a class="c-white describe fw-600" href="#">Частые вопросы</a>
+                        </li>
+                        <li class="navbar-item ">
+                            <a class="c-white describe fw-600" href="#">Сотрудничество</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-items flex flex-center">
+                        <li class="navbar-item none">
+                            <img src="./main-icons/icon_favorite.png" alt="icon-favorite">
+                        </li>
+                        <li class="navbar-item">
+                            <img src="./main-icons/icon_search.png" alt="search">
+                        </li>
+                        <li class="navbar-item none">
+                            <a class="c-white describe fw-600" href="#">Поиск по названию</a>
+                        </li>
+                        <li class="navbar-item">
+                            <img src="./main-icons/Frame.png" alt="frame">
+                        </li>
+                        <li class="navbar-item none">
+                            <a class="c-white describe fw-600" href="#">8 (843) 528-65-48</a>
+                        </li>
+                        <li class="navbar-item navbar-item_burger">
+                            <img src="./main-icons/icon_burger.png" alt="burger">
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+            <div class="responsive flex flex-between">
+                <div class="responsive-item">
+                    Открыть подборку
+                </div>
+                <div class="responsive-item">
+                    Открыть подборку
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="container">
+                <div class="flex flex-between">
+                    <div class="header-info fl-1">
+                        <h1 class="c-white">
+                            Аренда коттеджей и домов в Казани
+                        </h1>
+                        <p class="c-white subtitle header-info_subtitle">
+                            Давайте вам что-нибудь подберём
+                        </p>
+                        <div class="flex header-info_margin none">
+                            <div>
+                                <img src="./main-images/main-image_item1.png" alt="hose">
+                                <p class="c-white fw-600 describe">С бассейном</p>
+                            </div>
+                            <div>
+                                <img src="./main-images/main-image_item2.png" alt="house">
+                                <p class="c-white fw-600 describe">Семейные <br> и уютные</p>
+                            </div>
+                            <div>
+                                <img src="./main-images/main-image_item3.png" alt="house">
+                                <p class="c-white fw-600 describe">Хиты продаж</p>
+                            </div>
+                        </div>
+                        <div class="header-info_contact none">
+                            <img src="./main-icons/logo_youtube.png" alt="youtube">
+                            <img src="./main-icons/logo_instagram.png" alt="youtube">
+                            <img src="./main-icons/logo_vk.png" alt="youtube">
+                            <img src="./main-icons/whatsapp (Traced).png" alt="youtube"><img
+                                src="./main-icons/telegram (Traced).png" alt="youtube">
+                        </div>
+                    </div>
+                    <div class="header-image fl-1 none">
+                        <form class="#" action="#">
+                            <label class="header-image_label header-margin1" for="name">Въезд</label>
+                            <label class="header-image_label" for="name">Отъезд</label>
+                            <input class="header-image_input" type="text" id="name" placeholder="oт">
+
+                            <label class="header-image_label header-margin2" for="name1">Количество человек</label>
+                            <input class="header-image_input" id="name1" type="number" placeholder="12">
+
+                            <div class="header-image_money header-margin3">
+                                <div class="line line-one"></div>
+                                <div class="line line-two"></div>
+                            </div>
+                            <span class="header-image_span">13 000 ₽</span>
+                            <span class="header-image_span">150 000 ₽</span>
+                            <button type="submit" class="header-image_button btn-long header-margin4">Найти</button>
+                        </form>
+                    </div>
+                </div>
+                <button class="header-button btn-long">
+                    Заявка на подбор
+                </button>
+            </div>
+        </header>
+    </div>
 
 </body>
 
