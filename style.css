@@ -1,77 +1,14 @@
-/* BODY AND CONTAINER STRUCTURE */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/* font-family:'Raleway', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
 
-body,
-a {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-}
-
-/* font-size*/
-.fz-96 {
-  font-size: 96px;
-}
-
-.fz-40 {
-  font-size: 40px;
-}
-
-.fz-32 {
-  font-size: 32px;
-}
-
-.fz-30 {
-  font-size: 30px;
-}
-
-.fz-24 {
-  font-size: 24px;
-}
-
-.fz-20 {
-  font-size: 20px;
-}
-
-.fz-18 {
-  font-size: 18px;
-}
-
-.fz-14 {
-  font-size: 14px;
-}
-
-/* line-height*/
-.lh-16 {
-  line-height: 16px;
-}
-
-.lh-21 {
-  line-height: 21px;
-}
-
-.lh-28 {
-  line-height: 28px;
-}
-
-.lh-23 {
-  line-height: 23px;
-}
-
-.lh-19 {
-  line-height: 19px;
-}
-
-.lh-15 {
-  line-height: 15px;
-}
-
-/* NULL STYLE*/
+/*   NULL STYLE ###################### */
 * {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 *,
@@ -129,7 +66,22 @@ img {
   vertical-align: top;
 }
 
-/* FLEX POSITION STRUCTURE================= */
+/*   BODY STRUCTURE========================== */
+
+body {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+/*   CONTAINER STRUCTURE========================== */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/*   FLEX POSITION STRUCTURE================= */
 .flex,
 .flex-center,
 .flex-right,
@@ -172,86 +124,154 @@ img {
   flex: 2;
 }
 
-.gap-40 {
-  gap: 40px;
+/*   BUTTON STRUCTURE========================= */
+
+.btn-long {
+  width: 280px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background: #f4683f;
+  border-radius: 25px;
+}
+/*   card-default STRUCTURE========================= */
+.card-default {
+  box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
+  border-radius: 20px;
+  background: #ffffff;
 }
 
-/* BUTTON STRUCTURE*/
-.btn {
-  font-weight: 500;
-}
-@media (max-width: 375px) {
-  .btn {
-    height: 32px;
-  }
-}
-/*   TEXT STRUCTURE*/
+/*   TEXT STRUCTURE=========================== */
 .text-center {
   text-align: center;
 }
 
-/*   font-weight */
+h1 {
+  font-size: 60px;
+  letter-spacing: 0.02em;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+h1,
+.title,
+.subtitle {
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+}
+.describe {
+  font-size: 18px;
+}
+/*   font-weight-------- */
 .fw-700 {
   font-weight: 700;
 }
 
-.fw-500 {
-  font-weight: 500;
+.fw-600 {
+  font-weight: 600;
 }
 
 .fw-400 {
   font-weight: 400;
 }
 
-/*COLOR STRUCTURE*/
+/*   COLOR STRUCTURE========================== */
 
+/* background */
 .bg-white {
   background: #fff;
 }
-
 .bg-black {
   background: #000;
 }
-
-.bg-purple {
-  background: #5855e7;
+.bg-gray {
+  background: #333;
 }
 
+/* color */
 .c-white {
   color: #fff;
 }
 .c-black {
   color: #000;
 }
-.c-purple {
-  color: #5855e7;
+.c-orange {
+  color: #f4683f;
 }
-.c-gray {
-  color: #eee;
-}
-
-/*   RADIUS STRUCTURE*/
-.border-3 {
-  border: 3px solid #6347eb;
+.c-grey {
+  color: #333;
 }
 
-.border-8 {
-  border: 8px solid #fff;
-}
-/*   RADIUS STRUCTURE */
-
-.bd-circle {
-  border-radius: 50%;
-}
-.bd-rad-15 {
-  border-radius: 15px;
+.c-w-grey {
+  color: #727488;
 }
 
-.bd-rad-10 {
-  border-radius: 10px;
+/*   border STRUCTURE========================= */
+.border-1 {
+  border: 1px solid #c0c2d7;
 }
 
-.bd-rad-5 {
-  border-radius: 5px;
+/*   RADIUS STRUCTURE========================= */
+
+.bd-rad-20 {
+  border-radius: 20px;
 }
-/* ACTIVE STRUCTURE*/
+
+/*   ACTIVE STRUCTURE========================= */
+
+@media (max-width: 1400px) {
+  /* body */
+  body {
+    font-size: 14px;
+  }
+  /* container */
+  .container {
+    max-width: 1300px;
+  }
+  /* h1 */
+  h1 {
+    font-size: 56px;
+  }
+  /* title */
+  .title {
+    font-size: 36px;
+  }
+  /* subtitle */
+  .subtitle {
+    font-size: 18px;
+  }
+  /* btn-long */
+  .btn-long {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  /* container */
+  .container {
+    max-width: 320px;
+  }
+  /* h1 */
+  h1 {
+    font-size: 40px;
+  }
+  /* title */
+  .title {
+    font-size: 26px;
+  }
+  /* subtitle */
+  .subtitle {
+    font-size: 20px;
+  }
+  /* btn-long */
+  .btn-long {
+    width: 320px;
+  }
+}
