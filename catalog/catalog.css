@@ -34,8 +34,15 @@ nav {
   }
   .navbar-item_burger {
     display: block;
+    order: 3;
   }
   .responsive-item {
     display: block;
+  }
+  .navbar-item_search {
+    order: 2;
+  }
+  .navbar-item_phone {
+    order: 1;
   }
 }
